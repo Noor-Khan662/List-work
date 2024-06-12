@@ -1,0 +1,285 @@
+
+Bullet List:
+html
+Copy code
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+Number List:
+html
+Copy code
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+Mixed Bullet List:
+html
+Copy code
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>
+    <ul>
+      <li>Sub-item 1</li>
+      <li>Sub-item 2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Examples</title>
+</head>
+<body>
+
+<h2>Bullet List:</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<h2>Number List:</h2>
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+<h2>Mixed Bullet List:</h2>
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>
+    <ul>
+      <li>Sub-item 1</li>
+      <li>Sub-item 2</li>
+    </ul>
+  </li>
+  <li>Item 3</li>
+</ul>
+
+</body>
+</html>
+n it in a web browser to see the output. Each list type is demonstrated with its respective heading.
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Examples</title>
+<style>
+  /* Style the list items to look like buttons */
+  .list-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .list-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+
+<h2>Bullet List:</h2>
+<ul>
+  <li><a href="#" class="list-button">Task 1</a></li>
+  <li><a href="#" class="list-button">Task 2</a></li>
+  <li><a href="#" class="list-button">Task 3</a></li>
+</ul>
+
+<h2>Number List:</h2>
+<ol>
+  <li><a href="#" class="list-button">Task 1</a></li>
+  <li><a href="#" class="list-button">Task 2</a></li>
+  <li><a href="#" class="list-button">Task 3</a></li>
+</ol>
+
+<h2>Mixed Bullet List:</h2>
+<ul>
+  <li><a href="#" class="list-button">Task 1</a></li>
+  <li><a href="#" class="list-button">Task 2</a></li>
+  <li>
+    <ul>
+      <li><a href="#" class="list-button">Sub-task 1</a></li>
+      <li><a href="#" class="list-button">Sub-task 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="list-button">Task 3</a></li>
+</ul>
+
+</body>
+</html>
+In this code, I've added anchor tags <a> around each list item's content with the class "list-button" applied to style them like buttons. The "#" in the href attribute prevents the page from refreshing. Then, I've added CSS to style these anchor tags to look like buttons and provided a hover effect.
+
+You
+But task 1 task 2 ko click krne per kam kiun show ni hi rha
+ChatGPT
+ChatGPT
+If you want to show some action when clicking on the list items (e.g., displaying content or navigating to another page), you can use JavaScript to handle the click event. Below is an example of how you can modify the HTML to include JavaScript functionality:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Examples</title>
+<style>
+  /* Style the list items to look like buttons */
+  .list-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .list-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+<script>
+  // JavaScript function to handle list item click
+  function handleClick(task) {
+    alert('Clicked on ' + task);
+    // Here you can add your desired action, such as displaying content or navigating to another page
+  }
+</script>
+</head>
+<body>
+
+<h2>Bullet List:</h2>
+<ul>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 1')">Task 1</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 2')">Task 2</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 3')">Task 3</a></li>
+</ul>
+
+<h2>Number List:</h2>
+<ol>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 1')">Task 1</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 2')">Task 2</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 3')">Task 3</a></li>
+</ol>
+
+<h2>Mixed Bullet List:</h2>
+<ul>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 1')">Task 1</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 2')">Task 2</a></li>
+  <li>
+    <ul>
+      <li><a href="#" class="list-button" onclick="handleClick('Sub-task 1')">Sub-task 1</a></li>
+      <li><a href="#" class="list-button" onclick="handleClick('Sub-task 2')">Sub-task 2</a></li>
+    </ul>
+  </li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 3')">Task 3</a></li>
+</ul>
+
+</body>
+</html>
+
+html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>List Examples</title>
+<style>
+  /* Style the list items to look like buttons */
+  .list-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .list-button:hover {
+    background-color: #0056b3;
+  }
+</style>
+<script>
+  // JavaScript function to handle task click
+  function handleClick(task) {
+    // Get the element to display the task's work
+    var workElement = document.getElementById('work');
+    
+    // Display the task's work
+    switch(task) {
+      case 'Task 1':
+        workElement.innerHTML = 'Work for Task 1';
+        break;
+      case 'Task 2':
+        workElement.innerHTML = 'Work for Task 2';
+        break;
+      case 'Task 3':
+        workElement.innerHTML = 'Work for Task 3';
+        break;
+      // Add more cases for additional tasks if needed
+      default:
+        workElement.innerHTML = '';
+    }
+  }
+  
+  // JavaScript function to go back to the list of tasks
+  function goBack() {
+    // Get the element to display the task's work
+    var workElement = document.getElementById('work');
+    
+    // Clear the work content
+    workElement.innerHTML = '';
+  }
+</script>
+</head>
+<body>
+
+<h2>List of Tasks:</h2>
+<ul>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 1')">Task 1</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 2')">Task 2</a></li>
+  <li><a href="#" class="list-button" onclick="handleClick('Task 3')">Task 3</a></li>
+</ul>
+
+<!-- Container to display the task's work -->
+<div id="work"></div>
+
+<!-- Back button -->
+<button onclick="goBack()">Back</button>
+
+</body>
+</html>
